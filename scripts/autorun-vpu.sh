@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./unit_tests/test-utils.sh
+source /test-definitions/scripts/test-utils.sh
 
 #
 # Exit status is 0 for PASS, nonzero for FAIL
@@ -14,10 +14,10 @@ fi
 # devnode test
 check_devnode "/dev/mxc_vpu"
 
-run_testcase "./mxc_vpu_test.out -C config_dec"
+run_testcase "./test-definitions/scripts/mxc_vpu_test.out -C config_dec"
 
 if [ "$(platform)" = IMX27ADS ]; then
-run_testcase "./unit_tests/mxc_vpu_test.out -C config_enc"
+run_testcase "./test-definitions/scripts/mxc_vpu_test.out -C config_enc"
 rm -f test.264
 fi
 
