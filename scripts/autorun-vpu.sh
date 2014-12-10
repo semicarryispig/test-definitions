@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source test-utils.sh
+source /test-utils.sh
 
 #
 # Exit status is 0 for PASS, nonzero for FAIL
