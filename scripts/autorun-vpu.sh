@@ -14,10 +14,10 @@ fi
 # devnode test
 check_devnode "/dev/mxc_vpu"
 
-run_testcase "./mxc_vpu_test.out -C config_dec"
+run_testcase "./unit_tests/mxc_vpu_test.out -C config_dec"
 
 if [ "$(platform)" = IMX27ADS ]; then
-run_testcase "./mxc_vpu_test.out -C config_enc"
+run_testcase "./unit_tests/mxc_vpu_test.out -C config_enc"
 rm -f test.264
 fi
 
