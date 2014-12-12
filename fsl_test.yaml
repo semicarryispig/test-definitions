@@ -31,6 +31,8 @@ run:
 #       - lava-test-case linux-linaro-ubuntu-ipu --shell bash /unit_tests/autorun-ipu.sh
 #       - lava-test-case linux-linaro-ubuntu-keypad --shell bash /unit_tests/autorun-keypad.sh
 #       - lava-test-case linux-linaro-ubuntu-rtc --shell bash /unit_tests/autorun-rtc.sh
-        - lava-test-case linux-linaro-ubuntu-wdog --shell bash /test-definitions/scripts/autorun-wdog.sh
+        - 'cd test-definitions/scripts'
+        - './autorun-wdog.sh'
+#        - lava-test-case linux-linaro-ubuntu-wdog --shell bash /test-definitions/scripts/autorun-wdog.sh
 parse:
     pattern: "[ a-zA-Z]+ (?P<test_case_id>[a-zA-Z0-9]+):\\s(?P<result>PASS|FAIL|SKIP)"
