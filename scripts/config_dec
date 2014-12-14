@@ -5,7 +5,7 @@ operation=2
 
 # read input from file. Mandatory for decode. If not specified for encode
 # then default is camera
-input=akiyo.mp4
+input=./scripts/akiyo.mp4
 
 # write output to file. For decode, if not specified, then default is LCD
 output=
