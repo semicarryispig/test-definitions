@@ -18,13 +18,6 @@ install:
         - 'git branch master origin/master'
         - 'git checkout master'
         - 'make all'
-    deps:
-        - git
-        - git-core
-        - bzip2
-        - flex
-        - bison
-        - build-essential
 
 run:
     steps:
