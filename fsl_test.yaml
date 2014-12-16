@@ -25,6 +25,6 @@ run:
         - lava-test-case linux-linaro-ubuntu-vpu  --shell ./scripts/autorun-vpu.sh
         - lava-test-case linux-linaro-ubuntu-fb --shell ./scripts/autorun-fb.sh
         - lava-test-case linux-linaro-ubuntu-wdog  --shell ./scripts/autorun-wdog.sh
-        - lava-test-case linux-linaro-ubuntu-suspend  --shell ./scripts/suspend_resume.sh
+        - lava-test-case linux-linaro-ubuntu-suspend  --shell ./scripts/suspend_random_auto.sh
 parse:
     pattern: "[ a-zA-Z]+ (?P<test_case_id>[a-zA-Z0-9]+):\\s(?P<result>PASS|FAIL|SKIP)"
